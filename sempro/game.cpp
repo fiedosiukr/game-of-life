@@ -60,8 +60,7 @@ void Game::randomizeCells() {
 }
 
 bool Game::inCells(int i, int j) {
-	bool returnment = (i >= 0 && i < size && j >= 0 && j < size);
-	return returnment;
+	return i >= 0 && i < size && j >= 0 && j < size;
 }
 
 int Game::calculateNeighbours(int i, int j) {
